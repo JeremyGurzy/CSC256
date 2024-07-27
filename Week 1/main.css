@@ -1,0 +1,14 @@
+body{
+    background-image: linear-gradient(red, yellow);
+    background-attachment: fixed;
+    /*Changed font because original font looked fairly messed up around the edges of each letter*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#Contact{
+    padding-top: 250px;
+}
+
+#About{
+    padding-top: 50px;
+}
