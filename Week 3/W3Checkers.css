@@ -1,0 +1,49 @@
+/* styles for the board */
+#divCheckersBoard{
+    /* 60px * 8 squares */
+    width: 480px;
+    
+
+}
+
+
+
+/* style for each square */
+.checkersSquare{
+    /* align the squares next to each other */
+    float: left;
+    /* square width */
+    width: 60px;
+    /* Square height */
+    height: 60px;
+    /* default square color */
+    background-color: aqua;
+    
+}
+
+/* the alternating piece style */
+.checkerAlt{
+    background-color: navy;
+    
+}
+
+/* Stlyes for the pieces */
+.checkerPiece{
+    width: 55px;
+    height: 55px;
+    margin: 2.5px;
+    border-radius: 50%; /* this will make a circle */
+    box-shadow: 4px 4px 4px black;
+}
+
+/* styles for piece type 1 */
+.checkerPiece-w{
+    background-color: tomato;
+
+}
+
+/* styles for piece type 2 */
+.checkerPiece-b{
+    background-color: yellowgreen;
+
+}
