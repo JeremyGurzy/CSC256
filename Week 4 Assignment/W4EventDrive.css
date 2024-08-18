@@ -1,0 +1,44 @@
+body {
+    background-color: gray;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game {
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.pkmImage img{
+    padding-bottom: 50px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.buttons {
+    display: none;
+    gap: 10px;
+}
+
+#startGameButton{
+    display: flex;
+}

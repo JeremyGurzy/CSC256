@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's That Pocket Monster?</title>
+    <link rel="stylesheet" href="W4EventDrive.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to "Who's That Pocket Monster?"</h1>
+        <h2>For this game, the rules are simple. Take a close look at each image and then click on your answer. </h2>
+        <h2>Don't worry, you may guess as many times as you'd like!</h2>
+        <p>Score: <span id="spnScore"></span></p>
+    </header> 
+    <main>
+        
+        <!--Container for the game-->
+        <div id="game">
+            <p>Who is this Pocket Monster?</p>
+            <!--Image container-->
+            <div class="pkmImage">
+                <!--Source will be changed using JavaScript-->
+                <img id="pokemon" src="pokeball.jpg" alt="Where's that pocket monster?">
+                
+        </div>
+        <button id="startGameButton">Start Game</button>
+        <div class="buttons">
+            
+            <button class="choiceButton">Name</button>
+            <button class="choiceButton">Name</button>
+            <button class="choiceButton">Name</button>
+        </div>
+
+    </div>
+    </main>
+
+<script src="W4EventDrive.js"></script>
+
+</body>
+</html>
