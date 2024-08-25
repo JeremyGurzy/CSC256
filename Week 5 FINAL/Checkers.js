@@ -98,33 +98,31 @@ function createPiece(pieceId, pieceClass, theSquare){
    // Add studs (2x2 grid) to the checker piece
    // Create new div for top-left stud
    var studTopLeft = document.createElement("div");
-
+    //apply the style
    studTopLeft.classList.add("stud", "top-left");
-
+    //append the stud
    newPiece.appendChild(studTopLeft);
 
    // Create new div for top-right stud
    var studTopRight = document.createElement("div");
-
+    //apply the style
    studTopRight.classList.add("stud", "top-right");
-
+    //append the stud
    newPiece.appendChild(studTopRight);
 
    // Create new div for bottom-left stud
    var studBottomLeft = document.createElement("div");
-
+    //apply the style
    studBottomLeft.classList.add("stud", "bottom-left");
-
+    //append the stud   
    newPiece.appendChild(studBottomLeft);
 
    // Create new div for bottom-right stud
    var studBottomRight = document.createElement("div");
-
+    //apply the style
    studBottomRight.classList.add("stud", "bottom-right");
-
+    //append the stud
    newPiece.appendChild(studBottomRight);
-
-
 
     // add the piece to the square
     theSquare.appendChild(newPiece);
@@ -184,12 +182,17 @@ function movePiece(event) {
        var newSquareDiv = document.getElementById("div" + newSquareId);
 
        // check if the move is a jump, difference in row and col is 2
+       // convert the first character of oldPieceId to an integer for the old row
        var oldRow = parseInt(oldPieceId[0]);
+        // convert the second character of oldPieceId to an integer for the old column
        var oldCol = parseInt(oldPieceId[1]);
+       
+        // convert the first character of newSquareId to an integer for the new row
        var newRow = parseInt(newSquareId[0]);
+        // convert the second character of newSquareId to an integer for the new column
        var newCol = parseInt(newSquareId[1]);
 
-
+        // check if the move is a diagonal jump by comparing the absolute differences in rows and columns
        if (Math.abs(newRow - oldRow) == 2 && Math.abs(newCol - oldCol) == 2) {
            // variables that calculate the midpoint of the rows and columns
            var midRow = (oldRow + newRow) / 2;
@@ -198,8 +201,9 @@ function movePiece(event) {
 
            // variables that find the piece at the midpoint and remove it
            var midSquare = document.getElementById(midSquareId);
+           // get the checker piece with the midpoint 
            var midPiece = midSquare.querySelector(".checkerPiece");
-           // if for 
+           // if for checking if the piece is a midpoint square
            if (midPiece) {
             //function removes the piece being jumped
             midSquare.removeChild(midPiece);

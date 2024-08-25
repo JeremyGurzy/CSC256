@@ -31,7 +31,7 @@ header{
 }
 nav.allPages button:hover {
     background-color: blue;
-    color: #fff;
+    color: white;
     
     
 }
@@ -66,10 +66,10 @@ h1{
     color: white;
     font-size: 50px;
     text-shadow: 
-    -2px -2px 0px #000, /* Top left shadow */
-    2px -2px 0px #000,  /* Top right shadow */
-    -2px 2px 0px #000,  /* Bottom left shadow */
-    2px 2px 0px #000;   /* Bottom right shadow */
+    -2px -2px 0px black, /* Top left shadow */
+    2px -2px 0px black,  /* Top right shadow */
+    -2px 2px 0px black,  /* Bottom left shadow */
+    2px 2px 0px black;   /* Bottom right shadow */
 }
 h2{
     padding-top: 100px;
@@ -93,7 +93,7 @@ footer{
 }
 
 #topic {
-    background-color: #eee;
+    background-color: white;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -213,7 +213,6 @@ textarea, #username {
 
 /* styles for the board */
 #divCheckersBoard{
-    /* 60px * 8 squares */
     width: 480px;
     
 
