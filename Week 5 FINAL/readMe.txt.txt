@@ -1,0 +1,1 @@
+To use this website all files must be present. There is a forums html and js, home html and js, coming soon html and js, checkers html and js, and one css file. this project must be started at the home html in order to understand full functionality.

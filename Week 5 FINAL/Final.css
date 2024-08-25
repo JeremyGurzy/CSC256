@@ -1,0 +1,296 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("legoBackground2.jpeg");
+    background-size: cover;
+}
+
+header{
+    background-image: url("legoBackground.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Courier New', Courier, monospace;
+    
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+}
+
+.allPages {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 10px;
+    
+}
+nav.allPages button:hover {
+    background-color: blue;
+    color: #fff;
+    
+    
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    padding-top: 5px;
+    
+}
+
+/*Went a different height for each page due to the games page being long to accompany for the checkers game, the forums and home page needed to be shorter */
+#home{
+    border: solid;
+    width: 70%;
+    height: 750px;
+    text-align: center;
+    background-color: lightgrey;           
+    margin: auto;          
+    flex-direction: column;
+    align-items: center; 
+    box-sizing: border-box; 
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#homeP{
+    text-align: center;
+    padding-left: 10px;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    text-shadow: 
+    -2px -2px 0px #000, /* Top left shadow */
+    2px -2px 0px #000,  /* Top right shadow */
+    -2px 2px 0px #000,  /* Bottom left shadow */
+    2px 2px 0px #000;   /* Bottom right shadow */
+}
+h2{
+    padding-top: 100px;
+}
+footer{
+    padding-top: 50px;
+}
+
+
+
+/* CSS for the Forums page */
+#forums{
+    border: solid;
+    width: 70%;
+    height: 750px;
+    background-color: lightgrey;           
+    margin: 0 auto;             
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#topic {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.comment p {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+p{
+    text-align: left;
+    padding-left: 10px;
+}
+textarea, #username {
+    width: 50%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 0; 
+    display: block; 
+    
+}
+
+.inputSection {
+    margin-left: 0; 
+}
+
+
+
+/*This section is for the coming soon page*/
+/* Fix font size on the set names and release date */
+.comingSoon{
+    border: solid;
+    width: 70%;
+    height: 750px;
+    text-align: center;
+    background-color: lightgrey;           
+    margin: auto;          
+    flex-direction: column;
+    align-items: center;            
+    box-sizing: border-box; 
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#previousSet{
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+#nextSet{
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.navButtons {
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+    margin-top: 20px; 
+}
+
+.slideshowContainer {
+    display: flex;
+    justify-content: center;
+}
+.slideshowContainer img{
+    height: 400px;
+    width: 400px;
+    
+}
+
+.setNameAndDate {
+    text-align: center;
+    margin-top: 10px;
+    border: solid;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    font-size: small;
+}
+
+
+
+/* This section is the checkers board */
+.game{
+    border: solid;
+    width: 70%;
+    height: 800px;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    text-align: center;
+    background-color: lightgrey;           
+    margin: auto;          
+    flex-direction: column;
+    align-items: center;            
+    box-sizing: border-box; 
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* styles for the board */
+#divCheckersBoard{
+    /* 60px * 8 squares */
+    width: 480px;
+    
+
+}
+
+/* style for each square */
+.checkersSquare{
+    /* align the squares next to each other */
+    float: left;
+    /* square width */
+    width: 60px;
+    /* Square height */
+    height: 60px;
+    /* default square color */
+    background-color: black;
+    
+}
+
+/* the alternating piece style */
+.checkerAlt{
+    background-color: white;
+    
+}
+
+/* Stlyes for the pieces */
+.checkerPiece{
+    width: 55px;
+    height: 55px;
+    margin: 2.5px;
+    border-radius: 50%; 
+    box-shadow: 4px 4px 4px black;
+    position: relative;
+    background-color: inherit;
+}
+
+/* styles for piece type 1 */
+.checkerPiece-w{
+
+    background-color: red;
+
+}
+
+/* styles for piece type 2 */
+.checkerPiece-b{
+
+    background-color: yellow;
+
+}
+
+/* Styles for the studs */
+.stud {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: inherit;
+    border-radius: 50%;
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Position the studs in a 2x2 grid */
+  .stud.top-left {
+    top: 8px;
+    left: 8px;
+  }
+  
+  .stud.top-right {
+    top: 8px;
+    right: 8px;
+  }
+  
+  .stud.bottom-left {
+    bottom: 8px;
+    left: 8px;
+  }
+  
+  .stud.bottom-right {
+    bottom: 8px;
+    right: 8px;
+  }
+
